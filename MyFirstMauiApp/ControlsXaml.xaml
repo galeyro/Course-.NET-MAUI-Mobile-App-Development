@@ -8,7 +8,7 @@
         <Label 
             Text="Click Count"
             FontSize="22"
-            TextColor="{x:Static Member=resources:SharedResources.FontColour}"
+            TextColor="{x:Static Member=resources:SharedResources.FontColor}"
             FontAttributes="Bold"
             x:Name="lblCounter"
             VerticalOptions="Center" 

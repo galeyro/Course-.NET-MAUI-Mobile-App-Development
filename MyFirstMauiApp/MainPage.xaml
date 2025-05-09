@@ -16,7 +16,7 @@
 
             <Label
                 Text="Hello, World!"
-                FontSize="{myFontSize:GlobalFontSize}}"
+                FontSize="{myFontSize:GlobalFontSize}"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 

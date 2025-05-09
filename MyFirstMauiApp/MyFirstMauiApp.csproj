@@ -63,6 +63,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="LayourExample.xaml.cs">
+	    <DependentUpon>LayourExample.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="ControlsXaml.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
