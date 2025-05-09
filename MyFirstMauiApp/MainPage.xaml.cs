@@ -3,7 +3,7 @@
     public partial class MainPage : ContentPage
     {
         int count = 0;
-
+        public const double FontSize = 22;
         public MainPage()
         {
             InitializeComponent();
@@ -22,4 +22,13 @@
         }
     }
 
+
+
+    public class GlobalFontSizeExtension : IMarkupExtension
+    {
+        public object ProvideValue(IServiceProvider serviceProvider)
+        {
+            return MainPage.FontSize;
+        }
+    }
 }
