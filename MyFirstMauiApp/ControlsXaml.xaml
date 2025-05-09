@@ -2,11 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMauiApp.ControlsXaml"
+             xmlns:resources="clr-namespace:MyFirstMauiApp.Resources"
              Title="ControlsXaml">
     <VerticalStackLayout>
         <Label 
             Text="Click Count"
             FontSize="22"
+            TextColor="{x:Static Member=resources:SharedResources.FontColour}"
             FontAttributes="Bold"
             x:Name="lblCounter"
             VerticalOptions="Center" 
