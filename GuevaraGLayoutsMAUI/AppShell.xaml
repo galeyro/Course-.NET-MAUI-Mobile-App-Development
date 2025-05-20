@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="GuevaraGLayoutsMAUI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GuevaraGLayoutsMAUI.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="GuevaraGLayoutsMAUI">
+
+    <ShellContent
+        Title="GridLayout"
+        ContentTemplate="{DataTemplate local:GridLayout}"
+        Route="GridLayout" />
+
+</Shell>

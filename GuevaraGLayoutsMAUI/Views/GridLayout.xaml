@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuevaraGLayoutsMAUI.Views.GridLayout"
+             Title="GridLayout">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Label 
+            Text="Column 0, Row 0"
+            Grid.Row="0"
+            Grid.Column="0"
+            TextColor="Black"
+            BackgroundColor="Azure"/>
+        <Label             
+            Grid.Row="0"
+            Grid.Column="1"
+           Text="Column 1, Row 0"
+               BackgroundColor="BlueViolet"/>
+        <Label             
+            Grid.Row="1"
+            Grid.Column="0"
+           Text="Column 0, Row 1" 
+            TextColor="Black"
+               BackgroundColor="Bisque"/>
+        <BoxView
+            Grid.Row="1"
+            Grid.Column="1"
+            Color="ForestGreen"
+            />
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            WidthRequest="160"
+            HeightRequest="40"
+            BackgroundColor="CornflowerBlue"
+            BorderColor="Black"
+            x:Name="ButtonIrAStackLayout"
+            Text="Ir a Stack Layout"
+            Clicked="ButtonIrAStackLayout_Clicked"
+            />
+    </Grid>
+</ContentPage>
