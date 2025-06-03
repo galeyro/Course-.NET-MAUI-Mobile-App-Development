@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_prueba.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label>Ingrese el numero de telefono:</Label>
+            <Entry Placeholder="numero de telefono"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <VerticalStackLayout
+                    Grid.Column="0">
+                    <Label>Seleccione la operadora:</Label>
+                    <!-- <Entry Placeholder="operadora"/> -->
+                    
+                </VerticalStackLayout>
+
+                <VerticalStackLayout
+                    Grid.Column="1">
+                    <Label>Seleccione el valor a recargar</Label>
+
+                    <RadioButton Content="3" GroupName="recargaGrupo" Value="3"   CheckedChanged="OnRecargaSeleccionada"/>
+                    <RadioButton Content="5" GroupName="recargaGrupo" Value="5"   CheckedChanged="OnRecargaSeleccionada"/>
+                    <RadioButton Content="10" GroupName="recargaGrupo" Value="10" CheckedChanged="OnRecargaSeleccionada"/>
+                </VerticalStackLayout>
+                
+            </Grid>
+
+            <Label
+                x:Name="mensajeRecargaLabel" 
+                Text="Ha seleccionado una recarga de: -- dolares"
+                FontAttributes="None"
+                FontSize="16"
+                />
+
+            <Button
+                Text="Recargar"
+                Clicked="Button_Clicked"
+                ></Button>
+
+
+        </VerticalStackLayout>
+        
+        
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaPrueba2API.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="Soy una página de chistes de prueba"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            
+            <Image
+                Source="https://img.freepik.com/vector-gratis/meme-cuadrado-gato-vibrante-simple_742173-4493.jpg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="vibing high!" />
+
+            <Button
+                x:Name="GoChistes"
+                Text="Chistes" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="GoChistes_Clicked"
+                HorizontalOptions="Fill" />
+            
+
+            <Button
+                x:Name="GoAbout"
+                Text="About" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="GoAbout_Clicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
